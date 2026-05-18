@@ -6,14 +6,25 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
       <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
       
-      <!-- Snowman -->
-      <a-sphere position="0 0.9 -5" radius="0.9" color="#FFF"></a-sphere>
-      <a-sphere position="0 2 -5" radius="0.6" color="#FFF"></a-sphere>
-      <a-sphere position="0 2.75 -5" radius="0.4" color="#FFF"></a-sphere>
+      <!-- Basic Sphere Snowman (left) -->
+       <a-sphere position="-3 0.9 -6" radius="0.9" color="#FFF"></a-sphere>
+       <a-sphere position="-3 2 -6" radius="0.6" color="#FFF"></a-sphere>
+       <a-sphere position="-3 2.75 -6" radius="0.4" color="#FFF"></a-sphere>
       <!-- can use cone and "scale" property to create nose -->
+
+      <!-- Wireframe Torus Snowman (center) -->
+       <a-torus position="0 0.5 -5" rotation="90 0 0" radius="1" color="#F00" wireframe="Textures"></a-torus>
+       <a-torus position="0 1.2 -5" rotation="90 0 0" radius="0.8" color="#0F0" wireframe="Textures"></a-torus>
+       <a-torus position="0 1.9 -5" rotation="90 0 0" radius="0.6" color="#00F" wireframe="Textures"></a-torus>
+       <a-cone position="0 2.5 -5" rotation="-15 0 0" height="1.1" radius-bottom="1.1" color="#FFF" wireframe="Textures"></a-cone>
+      
+      <!-- Wireframe Sphere Snowman (right) -->
+       <a-sphere position="3 0.9 -6" radius="0.9" color="#FFF" wireframe="Textures"></a-sphere>
+       <a-sphere position="3 2 -6" radius="0.6" color="#FFF" wireframe="Textures"></a-sphere>
+       <a-sphere position="3 2.75 -6" radius="0.4" color="#FFF" wireframe="Textures"></a-sphere>
 
       <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
       <!-- <a-plane position="0 0.1 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
